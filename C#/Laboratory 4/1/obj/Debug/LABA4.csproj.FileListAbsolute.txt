@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\bin\Debug\LABA4.exe.config
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\bin\Debug\LABA4.exe
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\bin\Debug\LABA4.pdb
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.Form1.resources
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.Properties.Resources.resources
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.exe
+C:\Users\User\source\repos\Labaratirnay 4\LABA4\LABA4\obj\Debug\LABA4.pdb
