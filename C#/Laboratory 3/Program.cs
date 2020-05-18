@@ -1,125 +1,56 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-namespace laba3
+using System.Threading.Tasks;
+
+namespace Laba3
 {
- 
-        class Sportsman
+    class Program
+    {
+        static void Main(string[] args)
         {
-            public string Name { get; private set; }
-            public string Sport { get; private  set; }
-            public string Country { get; private set; }
-            public int Age { get; private  set; }
-            public bool Health { get; private set; }
-            public double Record { get; private set; } 
-            public int Medal { get; private set; }
-            protected int MyId { get;private  set; }
-            public static int Id = 0;
-        public Sportsman(string name, string sport, string country, int age, double record) 
-            {
-                Name = name;
-                Sport = sport;
-                Country = country;      
-                Age = age;
-                Medal = 0;
-                Record =record;
-                Health = false;
-                MyId = ++Id;
+            Sportsman Sportsman1 = new Sportsman();
+            Sportsman Sportsman2 = new Sportsman("Petrov", 26, "Skiing");
+
+            Console.WriteLine(Sportsman1);
+            Console.WriteLine(Sportsman2);
+            Sportsman[] sportsman = new Sportsman[2];
+            EnterSportsman(sportsman);
+            Console.WriteLine();
+            Console.ReadKey();
         }
-            public Sportsman(string name, string sport, string country, int age, double record, int medal, bool health=false)
-                :this(name,sport,country,age,record)
+        static int CheckInt()
+        {
+            int CheckNumber;
+            while (!int.TryParse(Console.ReadLine(), out CheckNumber) || CheckNumber <= 0)
             {
-                Health = health;
-                Medal = medal;
+                Console.WriteLine("Enter again");
+            }
+            return CheckNumber;
+        }
+        
+
+        static void EnterSportsman(Sportsman[] sportsman)
+        {
+
+            for (int i = 0; i < sportsman.Length; i++)
+            {
+                Console.WriteLine("\n");
+                sportsman[i] = new Sportsman();
+                Console.WriteLine("Enter name");
+                sportsman[i].Name = Console.ReadLine();
+                Console.WriteLine("Enter age:");
+                sportsman[i].Age = CheckInt();
+                Console.WriteLine("Enter sport");
+                sportsman[i].Sport = Console.ReadLine();
+
+            }
+            for (int j = 0; j < sportsman.Length; j++)
+            {
+                Console.WriteLine("\n"+(j + 1) + ")" + sportsman[j]);
             }
 
-        static public bool Check(string name)
-        {
-            if (name.Length > 40)
-            {
-                return false;
-            }
-            foreach (var ch in name)
-            {
-                if ((ch < 'A' || ch > 'Z') && (ch < 'a' || ch > 'z'))
-                {
-                    return false;
-                }
-            }
-            return true;
         }
-
-        public void ChangeName(string newName)
-        {
-            if (!Check(newName))
-            {
-                return;
-            }
-            Name = newName;
-        }
-   
-        public void ChangeAge(int newAge)
-        {
-            Age = newAge;
-        }
-        public void ChangeRecord(double newRecord)
-        {
-            Record = newRecord;
-        }
-            public void ChangeSport(string newSport)
-        {
-            if (!Check(newSport))
-            {
-                return;
-            }
-            Sport = newSport;
-        }
-        public void ChangeCountry(string newCountry)
-        {
-            if (!Check(newCountry))
-            {
-                return;
-            }
-            Country = newCountry;
-        }
-        public void ChangeHealth(bool newHealth)
-        {
-            Health = newHealth;
-        }
-
-        public string InfoToString()
-        {
-            StringBuilder info = new StringBuilder();
-            info.AppendLine($"Id: {MyId}");
-            info.AppendLine($"Name: {Name}");
-            info.AppendLine($"Sport: { Sport}");
-            info.AppendLine($"Country: {Country}");
-            info.AppendLine($"Age: {Age}yers");
-            info.AppendLine($"Record: {Record}m");
-            info.AppendLine($"Medal:{Medal}");
-            info.AppendLine(Health ? "Sportsman is healthy" : "Sportsman is sick!");
-            return info.ToString();
-        }
-
-        public void Reward()
-        {
-            Medal++;
-        }
-
-        public void Reward(int fresh)
-        {
-            Medal += fresh;
-        }
-
-        public void GetWell()
-        {
-            Health = false;
-        }
-
-        public void GetSick()
-        {
-            Health = true;
-        }
-
     }
 }
