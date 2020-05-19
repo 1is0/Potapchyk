@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.exe
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.deps.json
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.runtimeconfig.json
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.runtimeconfig.dev.json
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.dll
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\bin\Debug\netcoreapp3.1\laba6.pdb
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\obj\Debug\netcoreapp3.1\laba6.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\obj\Debug\netcoreapp3.1\laba6.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\obj\Debug\netcoreapp3.1\laba6.AssemblyInfo.cs
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\obj\Debug\netcoreapp3.1\laba6.dll
+C:\Users\User\source\repos\Laboratory 6\laba6\laba6\obj\Debug\netcoreapp3.1\laba6.pdb
