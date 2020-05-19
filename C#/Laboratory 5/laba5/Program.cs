@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,7 @@ namespace laba5
     {
         static void Main(string[] args)
         {
-            competition sportsman = new  competition((competition.Ranking)2,"Ivanov",24,"Run","Olympic Games","Silver",9.74);
+            competition sportsman = new  competition((competition.Ranking)2,"Ivanov",24,"Run","Olympic Games","Silver", "Belarus");
             sportsman.ShowResults();
             Console.ReadKey();
         }
