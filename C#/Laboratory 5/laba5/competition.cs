@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,17 +27,17 @@ namespace laba5
         }
         public string NameCompetition { get; set; }
         public string Reward { get; set; }
-        public double Result { get; set; }
+        public string Country { get; set; }
         public Ranking Place { get; set; }
 
-        public competition(Ranking ranking,string name="", int age=0, string sport="", string  nameCompetition="", string reward="", double result=0)
+        public competition(Ranking ranking,string name="", int age=0, string sport="", string  nameCompetition="", string reward="", string country="")
         {
             Name = name;
             Age = age;
             Sport = sport;
             NameCompetition = nameCompetition;
             Reward = reward;
-            Result = result;
+            Country = country;
             Place = ranking;
             ID = SportsmanId();
         }
@@ -49,8 +49,9 @@ namespace laba5
             Console.WriteLine($"Competition:{NameCompetition}");
             Console.WriteLine($"Ranking place:{Place}");
             Console.WriteLine($"Reward:{Reward}");
-            Console.WriteLine($"Result:{Result}s");
+            Console.WriteLine($"Country:{Country}");
             Console.WriteLine($"ID:{ID}");
         }
     }
 }
+
